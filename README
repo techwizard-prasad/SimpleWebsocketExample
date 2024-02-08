@@ -1,0 +1,13 @@
+#Simple WebSocket Example
+Here we have 2 react projects, each project will have 3 counters Counter 1, Counter 2, Counter 3
+On click of "Increment" button of any counter in any project should update the respective counter in other project
+I have used WebSockets here.
+3rd project is a node server which handles the responsibility of keeping counters in both the projects in sync
+If you want to add another counter, you can just update `initialCounters` object iin server project.
+
+Steps to run:
+
+1. Open each project and install the dependencies by running `yarn`
+2. After installing dependencies, run server project first by running `yarn start`
+3. Then run both react projects by running `yarn run dev`
+4. Both projects will run in browser with initial counter as 0, and as soon as you click any increment button on any project, respective counter will update in the other project
